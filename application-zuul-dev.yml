@@ -7,6 +7,7 @@ zuul:
   routes:
     myPlat.serviceId: EASYGO-PLAT
     myPlat.path: /plat/**
+  routes:
     myProduct.serviceId: EASYGO-PRODUCT
     myProduct.path: /product/**
   ignored-services: "*"
