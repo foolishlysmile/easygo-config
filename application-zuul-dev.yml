@@ -5,7 +5,9 @@ spring:
     name: ZUUL-GATEWAY
 zuul:
   routes:
-    myUser.serviceId: EASYGO-PLAT
-    myUser.path: /plat/**
+    myPlat.serviceId: EASYGO-PLAT
+    myPlat.path: /plat/**
+    myProduct.serviceId: EASYGO-PRODUCT
+    myProduct.path: /product/**
   ignored-services: "*"
   prefix: "/services"
