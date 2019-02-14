@@ -1,13 +1,13 @@
 server:
-  port: 8001
+  port: 8004
 spring:
   application:
-    name: easygo-plat
+    name: easygo-product
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/easygo
+    url: jdbc:mysql://localhost:3306/aigou_product
     username: root
     password: 123456
 mybatis-plus:
   mapper-locations: classpath:cn/itsource/easygo/mapper/*Mapper.xml
-  type-aliases-package: cn.itsource.easygo.domain
+  type-aliases-package: cn.itsource.easygo.domain,cn.itsource.easygo.query
