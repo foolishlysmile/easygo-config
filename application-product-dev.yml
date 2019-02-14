@@ -9,5 +9,5 @@ spring:
     username: root
     password: 123456
 mybatis-plus:
-  mapper-locations: classpath:cn/easygo/mall/product/mapper/*Mapper.xml
-  type-aliases-package: cn.itsource.easygo.domain,cn.itsource.easygo.query
+  mapper-locations: classpath:cn/easygo/mapper/*Mapper.xml
+  type-aliases-package: cn.easygo.mall.domain,cn.easygo.mallquery
