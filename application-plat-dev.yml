@@ -5,7 +5,7 @@ spring:
     name: easygo-plat
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/easygo
+    url: jdbc:mysql://localhost:3306/easygo?useSSL=false
     username: root
     password: 123456
 mybatis-plus:
