@@ -4,12 +4,12 @@ spring:
   application:
     name: ZUUL-GATEWAY
 zuul:
-  routes:
-    api-1:
-      path: /plat/**
-      service-id: easygo-plat
-    api-2:
-      path: /product/**
-      service-id: easygo-product
   ignored-services: "*"
   prefix: "/services"
+  routes:
+    plat:
+      path: /plat/**
+      service-id: easygo-plat
+    product:
+      path: /product/**
+      service-id: easygo-product
