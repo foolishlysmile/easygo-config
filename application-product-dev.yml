@@ -11,3 +11,4 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:cn/easygo/mapper/*Mapper.xml
   type-aliases-package: cn.easygo.mall.domain,cn.easygo.mallquery
+  
