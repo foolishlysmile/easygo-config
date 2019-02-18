@@ -11,4 +11,18 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:cn/easygo/mapper/*Mapper.xml
   type-aliases-package: cn.easygo.mall.domain,cn.easygo.mallquery
-  
+feign:
+  hystrix:
+     enabled: true #开启熔断支持
+  client:
+    config:
+      remote-service:            #服务名，填写default为所有服务
+        connectTimeout: 2000    #与服务提供者连接超时的时间
+        readTimeout: 2000       #服务提供者响应的时间
+hystrix:
+  command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 2000 #方法最终的执行时间
