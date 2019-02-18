@@ -13,3 +13,6 @@ zuul:
     product:
       path: /product/**
       service-id: easygo-product
+ribbon:
+  ReadTimeout: 5000
+  SocketTimeout: 5000
