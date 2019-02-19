@@ -13,6 +13,9 @@ zuul:
     product:
       path: /product/**
       service-id: easygo-product
+    common:
+      path: /common/**
+      service-id: easygo-common
 ribbon:
   ReadTimeout: 5000
   SocketTimeout: 5000
