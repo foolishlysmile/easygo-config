@@ -10,7 +10,7 @@ spring:
     password: 123456
 mybatis-plus:
   mapper-locations: classpath:cn/easygo/mapper/*Mapper.xml
-  type-aliases-package: cn.easygo.mall.domain,cn.easygo.mallquery
+  type-aliases-package: cn.easygo.mall.domain,cn.easygo.mall.query
 feign:
   hystrix:
      enabled: true #开启熔断支持
