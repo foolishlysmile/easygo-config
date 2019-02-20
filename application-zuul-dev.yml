@@ -17,5 +17,5 @@ zuul:
       path: /common/**
       service-id: easygo-common
 ribbon:
-  ReadTimeout: 5000
-  SocketTimeout: 5000
+  ReadTimeout: 10000
+  SocketTimeout: 10000
